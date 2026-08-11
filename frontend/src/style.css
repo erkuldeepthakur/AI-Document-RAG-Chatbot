@@ -1,0 +1,61 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f4f7fb;
+  color: #182230;
+}
+button, input { font: inherit; }
+.app { max-width: 1050px; margin: 0 auto; padding: 34px 20px 60px; }
+header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 24px;
+}
+h1 { margin: 0 0 6px; font-size: 32px; }
+h2 { margin-top: 0; font-size: 19px; }
+header p { margin: 0; color: #667085; }
+.badge {
+  background: #182230; color: white; padding: 8px 12px;
+  border-radius: 999px; font-weight: 700;
+}
+.card {
+  background: white; border: 1px solid #e4e7ec;
+  border-radius: 16px; padding: 22px; margin-bottom: 18px;
+  box-shadow: 0 6px 24px rgba(16,24,40,.05);
+}
+.upload-row { display: flex; gap: 12px; flex-wrap: wrap; }
+input[type="file"] { flex: 1; min-width: 260px; }
+input {
+  border: 1px solid #d0d5dd; border-radius: 10px;
+  padding: 12px 14px; outline: none; background: white;
+}
+button {
+  border: 0; border-radius: 10px; padding: 12px 17px;
+  background: #182230; color: white; cursor: pointer; font-weight: 700;
+}
+button:disabled { opacity: .5; cursor: not-allowed; }
+.status { color: #667085; margin-bottom: 0; }
+.messages {
+  min-height: 320px; max-height: 520px; overflow-y: auto;
+  background: #f8fafc; border-radius: 12px; padding: 14px; margin-bottom: 14px;
+}
+.empty { color: #98a2b3; padding: 80px 10px; text-align: center; }
+.message {
+  padding: 12px 14px; border-radius: 12px; margin-bottom: 10px;
+  max-width: 85%; white-space: pre-wrap; line-height: 1.5;
+}
+.message strong { display: block; font-size: 12px; margin-bottom: 5px; }
+.message.user { background: #e8eefc; margin-left: auto; }
+.message.assistant { background: white; border: 1px solid #e4e7ec; }
+.composer { display: flex; gap: 10px; }
+.composer input { flex: 1; }
+.source {
+  padding: 12px; border: 1px solid #e4e7ec; border-radius: 10px;
+  margin-top: 10px;
+}
+.source p { margin: 6px 0 0; color: #667085; }
+@media (max-width: 650px) {
+  header { align-items: flex-start; gap: 15px; }
+  h1 { font-size: 25px; }
+  .composer { flex-direction: column; }
+}
