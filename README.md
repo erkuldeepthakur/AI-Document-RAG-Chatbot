@@ -196,13 +196,17 @@ http://localhost:5000
 10. The LLM generates a grounded response.
 11. Relevant sources are displayed with the answer.
 
-## 📸 Demo Preview
+## 📸 Demo
 
-> These screenshots show the local Demo Mode used for UI and retrieval testing.
+The application provides an interactive interface for uploading PDF documents, indexing their content, asking questions, and retrieving relevant document sources.
 
-![Main Interface](docs/images/demo-main.png)
+### Main Interface
 
-![Retrieved Sources](docs/images/demo-sources.png)
+![AI Document RAG Chatbot - Main Interface](docs/images/demo-main.png)
+
+### Retrieved Sources
+
+![AI Document RAG Chatbot - Retrieved Sources](docs/images/demo-sources.png)
 
 
 ## 🎯 Why RAG?
